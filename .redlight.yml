@@ -1,12 +1,8 @@
-# VERSION: BASE-REF-v1  (this copy lives on main / the PR base ref)
-# If a manifest compiler reads this file, it MUST see BASE-REF-v1.
+# VERSION: BASE-REF-v3-ADVANCED  (main moved AFTER the PR was opened)
+# A compiler reading pr.base.sha sees BASE-REF-v1; reading the branch NAME sees this.
 rules:
   - position: 0
     name: catch-all
     patterns: ["**"]
     action: review
     composition: base-ref-composition
-  - position: 1
-    name: skip-lockfiles
-    patterns: ["**/package-lock.json"]
-    action: skip

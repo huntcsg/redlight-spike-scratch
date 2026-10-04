@@ -1,0 +1,7 @@
+# VERSION: NESTED-BASE-v1  (nearest-ancestor resolution target)
+rules:
+  - position: 0
+    name: catch-all
+    patterns: ["**"]
+    action: review
+    composition: nested-composition
