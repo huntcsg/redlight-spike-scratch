@@ -19,3 +19,7 @@ def run_user_command(cmd):
 
 def ratio(a, b):
     return a / b
+
+
+def later(x):
+    return x * 2
